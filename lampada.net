@@ -1,0 +1,29 @@
+using System;
+class HelloWorld {
+ static void Main(){
+     
+   bool ligada = false;
+   
+   while (!ligada)
+   {
+       Console.WriteLine("Lampada");
+       Console.WriteLine("1 ligar");
+       Console.WriteLine("2 desligar");
+       Console.WriteLine(">>");
+       int n = int.Parse(Console.ReadLine());
+       
+       if(n == 1)
+       {
+            Console.WriteLine("\n Lampada Está Ligada");
+            ligada = true;
+            
+       }
+       else
+       {
+           Console.WriteLine("\n Lamada esta Desligada");
+           ligada = false;
+       }
+       
+   }
+  }
+}
